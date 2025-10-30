@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-// Smooth scroll effect
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    e.preventDefault();
-    document.querySelector(anchor.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-=======
 // Smooth scroll for navigation links
 document.querySelectorAll('nav ul li a').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -38,4 +27,3 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
   observer.observe(section);
 });
->>>>>>> a12fa759e950ee88290ebe1e0d3dae28ae2bf366
