@@ -1,94 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Obakeng Hlahle - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Obakeng Eric Hlahle — Full Stack Developer</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <script src="scripts.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav>
+
+  <!-- Fixed header -->
+  <header class="site-header">
+    <div class="header-left">
+      <div class="brand-transformer">FULL STACK<br><span class="small">DEVELOPER</span></div>
+    </div>
+
+    <nav class="header-nav" aria-label="Primary">
       <ul>
-        <li><a href="#bio">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" data-target="home" title="Home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+        <li><a href="#experience" data-target="experience" title="Professional Experience"><i class="fa-solid fa-briefcase"></i><span>Experience</span></a></li>
+        <li><a href="#skills" data-target="skills" title="Skills"><i class="fa-solid fa-code"></i><span>Skills</span></a></li>
+        <li><a href="#projects" data-target="projects" title="Projects"><i class="fa-solid fa-box-open"></i><span>Projects</span></a></li>
+        <li><a href="#contact" data-target="contact" title="Contact"><i class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="bio">
-    <h1>Obakeng Hlahle</h1>
-    <p>I'm a passionate full stack developer with experience in both technology and medical business operations. I specialize in Flask, Python, modern front-end design, and responsive web apps. Seeking Junior Software Engineer / Full Stack Developer roles.</p>
-  </section>
+  <!-- Container with sections; scroll-snap takes over -->
+  <main id="sections" class="snap-parent">
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project">
-        <h3>🛒 Flask Shopping Site</h3>
-        <p>E-commerce app with user login, cart, checkout, and database integration.</p>
-        <a href="https://flask-shopping-site.onrender.com/" target="_blank">Live Demo</a>
-        <a href="https://github.com/MrHlahle/flask-shopping-site" target="_blank">GitHub</a>
-      </div>
-      <div class="project">
-        <h3>🌦️ Weather App</h3>
-        <p>Displays real-time weather using an API with a modern interface.</p>
-        <a href="https://weather-app-on-render-link" target="_blank">Live Demo</a>
-        <a href="https://github.com/MrHlahle/weather-app" target="_blank">GitHub</a>
-      </div>
-      <div class="project">
-        <h3>✅ Task Manager</h3>
-        <p>Flask-based task manager for creating and managing daily tasks.</p>
-        <a href="https://flask-task-manager-1-24lg.onrender.com/" target="_blank">Live Demo</a>
-        <a href="https://github.com/MrHlahle/task-manager" target="_blank">GitHub</a>
-      </div>
-      <div class="project">
-        <h3>💻 Portfolio Site</h3>
-        <p>Personal portfolio showcasing my projects, skills, and contact info.</p>
-        <a href="https://your-portfolio-on-render-link" target="_blank">Live Demo</a>
-        <a href="https://github.com/MrHlahle/MyPortfoliox" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+    <!-- Home / Bio -->
+    <section id="home" class="snap-child section-home" tabindex="0" aria-label="Home">
+      <div class="home-inner">
+        <div class="home-left">
+          <h1 class="name">Obakeng Eric Hlahle</h1>
+          <p class="short-bio">Smart, driven Full Stack Developer with a passion for building practical, production-ready apps. Skilled in Python, Java, JavaScript and end-to-end web development. Seeking a hands-on engineering role where I can deliver impact fast.</p>
 
-  <section id="skills">
-    <ul class="skills-list">
-  <li>Python</li>
-  <li>Java</li>
-  <li>HTML / CSS / JavaScript</li>
-  <li>Flask</li>
-  <li>Bootstrap</li>
-  <li>SQL / MySQL</li>
-  <li>Git & GitHub</li>
-  <li>React</li>
-  <li>Docker & Render</li>
-</ul>
-</section>
+          <div class="cta-row">
+            <a class="btn" href="#projects" data-target="projects">Explore Projects</a>
+            <a class="btn ghost" href="Obakeng_Eric_Hlahle_Professional_CV.pdf" download>Download CV</a>
+          </div>
+        </div>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-item">
-      <h3>IT Assistant</h3>
-      <p>Ipontshe Primary School - 2023–2024</p>
-      <p>Provided IT support, maintained hardware/software, and trained staff.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Personal Assistant</h3>
-      <p>Dr Mmola Moropo at Mmola Orthopro Centre - 2024–2025</p>
-      <p>Managed digital systems, logistics, patient records, invoices, and IT support.</p>
-    </div>
-  </section>
+        <div class="home-center">
+          <div class="socials">
+            <a href="https://github.com/MrHlahle" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/MrHlahle/MyPortfoliox" target="_blank" aria-label="Portfolio Repo"><i class="fa-solid fa-folder-open"></i></a>
+            <a href="http://linkedin.com/in/obakeng-hlahle-b9b859361" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
 
-  <footer id="contact">
-    <p>Email: obakenghlahle4@gmail.com</p>
-    <p>Phone: 065 944 3505</p>
-    <p>LinkedIn: <a href="http://linkedin.com/in/obakeng-hlahle-b9b859361" target="_blank">LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/MrHlahle" target="_blank">GitHub</a></p>
-    <p>&copy; 2025 Obakeng Hlahle</p>
-  </footer>
+        <div class="home-right">
+          <!-- Animated code + gear visual -->
+          <div class="visual">
+            <div class="code-window">
+              <pre><code id="typing">const greet = () =&gt; console.log("Hello world");</code></pre>
+            </div>
+            <div class="gear" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="snap-child section-experience" tabindex="0" aria-label="Professional Experience">
+      <div class="section-content">
+        <h2>Professional Experience</h2>
+
+        <article class="job">
+          <h3>Personal Assistant / Technical Administrator — Mmola Orthotics & Prosthetics</h3>
+          <p class="period">Jul 2024 — Present</p>
+          <ul>
+            <li>Designed and managed digital workflows for patient records, claims and logistics — reducing processing time and errors.</li>
+            <li>Built simple tools & scripts to automate repetitive tasks (data entry, invoice generation), improving office efficiency.</li>
+            <li>Managed stock & deliveries, liaised with third-party couriers, and coordinated digital registration and shipping of devices.</li>
+            <li>Provided technical support across the practice and trained staff; introduced process-driven ticketing for request tracking.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3>ICT Support Technician (E-Cadre ICT Champion) — Ipontshe Primary School</h3>
+          <p class="period">Feb 2023 — May 2024</p>
+          <ul>
+            <li>Delivered hands-on IT support, maintained lab hardware and educational software, and trained teachers.</li>
+            <li>Assisted with coding & robotics curriculum rollouts and integrated learning tools that improved lesson engagement.</li>
+            <li>Set up small local networks and supported data backups and device maintenance procedures.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="snap-child section-skills" tabindex="0" aria-label="Skills">
+      <div class="section-content">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill"><i class="fa-brands fa-python"></i><span>Python</span></div>
+          <div class="skill"><i class="fa-brands fa-java"></i><span>Java</span></div>
+          <div class="skill"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="skill"><i class="fa-solid fa-database"></i><span>SQL / MySQL</span></div>
+          <div class="skill"><i class="fa-brands fa-react"></i><span>React</span></div>
+          <div class="skill"><i class="fa-solid fa-server"></i><span>Flask</span></div>
+          <div class="skill"><i class="fa-brands fa-github"></i><span>Git / GitHub</span></div>
+          <div class="skill"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+          <div class="skill"><i class="fa-solid fa-cloud"></i><span>Render</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="snap-child section-projects" tabindex="0" aria-label="Projects">
+      <div class="section-content">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- replace src with your screenshots in /assets -->
+          <div class="project-card">
+            <img src="assets/shopping_screenshot.jpg" alt="Flask shopping site screenshot">
+            <h4>Flask Shopping Site</h4>
+            <p>Full-stack e-commerce with login, cart & checkout (ZAR currency).</p>
+            <div class="links">
+              <a href="https://flask-shopping-site.onrender.com" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/MrHlahle/flask-shopping-site" target="_blank" class="code">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/weather_screenshot.jpg" alt="Weather app screenshot">
+            <h4>Weather App</h4>
+            <p>OpenWeatherMap API, clean UI, fast search.</p>
+            <div class="links">
+              <a href="https://weather-app-unof.onrender.com" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/MrHlahle/weather-app" target="_blank" class="code">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/task_screenshot.jpg" alt="Task manager screenshot">
+            <h4>Task Manager</h4>
+            <p>Lightweight Flask task tracker, fast and intuitive.</p>
+            <div class="links">
+              <a href="https://flask-task-manager-1-24lg.onrender.com" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/MrHlahle/task-manager" target="_blank" class="code">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/portfolio_screenshot.jpg" alt="Portfolio screenshot">
+            <h4>Portfolio</h4>
+            <p>Modern portfolio and project hub (this site).</p>
+            <div class="links">
+              <a href="https://my-portfolio-render-link" target="_blank" class="live">Live Demo</a>
+              <a href="https://github.com/MrHlahle/MyPortfoliox" target="_blank" class="code">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Download CV -->
+    <section id="contact" class="snap-child section-contact" tabindex="0" aria-label="Contact">
+      <div class="section-content">
+        <h2>Contact & Download</h2>
+        <p class="contact-line">Email: <a href="mailto:obakenghlahle4@gmail.com">obakenghlahle4@gmail.com</a> &nbsp; • &nbsp; Phone: <a href="tel:0659443505">065 944 3505</a></p>
+        <p class="contact-line">LinkedIn: <a href="http://linkedin.com/in/obakeng-hlahle-b9b859361" target="_blank">linkedin.com/in/obakeng-hlahle-b9b859361</a></p>
+
+        <div class="download-row">
+          <a class="btn big" href="Obakeng_Eric_Hlahle_Professional_CV.pdf" download>Download CV (PDF)</a>
+        </div>
+
+        <div class="bg-code"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
